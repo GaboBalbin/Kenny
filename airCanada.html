@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Boarding Pass</title>
+
+<style>
+body {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+.ticket {
+    position: relative;
+    width: 950px;
+    height: 260px;
+    background: #f4f4f4;
+    border-radius: 20px;
+    border: 15px solid #c81e2a;
+    display: flex;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+
+.cut {
+    position: absolute;
+    width: 29px;
+    height: 30px;
+    background: #c81e2a;
+    border-radius: 50%;
+    top: 50%;
+    z-index: 2;
+}
+
+.cut-left {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.cut-right {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+
+.left {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+}
+
+
+.left-main {
+    width: 100%;
+    margin-right: 15px;
+}
+
+
+.right {
+    width: 30%;
+    padding: 20px;
+    border-left: 2px dashed #999;
+}
+
+
+.header {
+    position: relative;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 3px;
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+
+
+.logo-img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: auto;
+}
+
+
+.top-row {
+    display: flex;
+}
+
+.top-row div {
+    margin-right: 20px;
+}
+
+.top-row div:last-child {
+    margin-right: 0;
+}
+
+
+.big {
+    color: #e11;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 11px;
+    color: #777;
+}
+
+
+.mid {
+    display: flex;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.mid div {
+    margin-right: 25px;
+}
+
+.mid div:last-child {
+    margin-right: 0;
+}
+
+.airport {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.small {
+    font-size: 12px;
+    color: #666;
+}
+
+
+.bottom {
+    display: flex;
+    margin-top: 15px;
+}
+
+.bottom div {
+    margin-right: 30px;
+}
+
+.bottom div:last-child {
+    margin-right: 0;
+}
+
+
+.barcode {
+    width: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background:
+        linear-gradient(black 2px, transparent 2px);
+
+    background-size: 100% 6px;
+    background-repeat: repeat-y;
+}
+
+
+.right .big {
+    font-size: 40px;
+}
+
+.section {
+    margin-bottom: 10px;
+}
+
+.center {
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="ticket">
+
+    <!-- CUTS -->
+    <div class="cut cut-left"></div>
+    <div class="cut cut-right"></div>
+
+    <!-- LEFT -->
+    <div class="left">
+
+        <div class="left-main">
+
+            <div class="header">
+                <img src="maple leaf.svg" class="logo-img">
+                AIR CANADA
+            </div>
+
+            <div class="top-row">
+                <div>
+                    <div class="label">GATE</div>
+                    <div class="big">81</div>
+                </div>
+                <div>
+                    <div class="label">FLIGHT</div>
+                    <div class="big">AC24</div>
+                </div>
+                <div>
+                    <div class="label">BOARDING TIME</div>
+                    <div class="big">3:20</div>
+                </div>
+            </div>
+
+            <div class="mid">
+                <div>
+                    <div class="label">FROM</div>
+                    <div class="airport">YUL</div>
+                    <div class="small">Montreal</div>
+                </div>
+
+                <div>➤</div>
+
+                <div>
+                    <div class="label">TO</div>
+                    <div class="airport">BOS</div>
+                    <div class="small">Boston</div>
+                </div>
+
+                <div>
+                    <div class="label">DATE</div>
+                    <div class="small">16 OCT 2026</div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div>
+                    <div class="label">NAME</div>
+                    Hollander/Shane
+                </div>
+
+                <div>
+                    <div class="label">SEAT</div>
+                    57D
+                </div>
+
+                <div>
+                    <div class="label">CLASS</div>
+                    Economy
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BARCODE -->
+        <div class="barcode"></div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+
+        <div class="section">
+            <strong>Hollander/Shane</strong>
+        </div>
+
+        <div class="section">
+            <div class="label">SEAT</div>
+            <div class="big">57D</div>
+        </div>
+
+        <div class="section">
+            <div class="label">ZONE</div>
+            3
+        </div>
+
+        <div class="section">
+            <div class="label">CLASS</div>
+            Economy
+        </div>
+
+        <div class="section">
+            <div class="label">DESTINATION</div>
+            BOS
+        </div>
+
+        <div class="center">
+            AC662<br>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
