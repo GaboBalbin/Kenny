@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Boarding Pass</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .ticket {
+        width: 900px;
+        height: 280px;
+        display: flex;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        background: white;
+    }
+
+    .left, .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 70%;
+        border-right: 2px dashed #ccc;
+    }
+
+    .right {
+        width: 30%;
+    }
+
+    .header {
+        background: #2f86c7;
+        color: white;
+        padding: 10px 15px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+    }
+
+    /* FIXED LEFT BARCODE */
+    .barcode-vertical {
+        width: 60px;
+        margin: 10px 0 10px 15px;
+        background: repeating-linear-gradient(
+            to bottom,
+            black 0px,
+            black 2px,
+            white 2px,
+            white 5px
+        );
+    }
+
+    .main-content {
+        flex: 1;
+        padding: 15px;
+    }
+
+    .info-top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .airport {
+        font-size: 26px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .airport span {
+        margin: 0 15px;
+        font-size: 22px;
+    }
+
+    .bottom-info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .right .content {
+        flex-direction: column;
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    .barcode-horizontal {
+        height: 40px;
+        margin-top: 15px;
+        background: repeating-linear-gradient(
+            to right,
+            black,
+            black 3px,
+            white 3px,
+            white 6px
+        );
+    }
+
+    .label {
+        color: gray;
+        font-size: 11px;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="ticket">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <div class="header">
+            ✈ BOARDING PASS
+        </div>
+
+        <div class="content">
+            <div class="barcode-vertical"></div>
+
+            <div class="main-content">
+                <div class="info-top">
+                    <div>
+                        <div class="label">PASSENGER</div>
+                        JOHN DOE
+                    </div>
+                    <div>
+                        <div class="label">FLIGHT</div>
+                        A123
+                    </div>
+                    <div>
+                        <div class="label">DATE</div>
+                        12/08/24
+                    </div>
+                    <div>
+                        <div class="label">SEAT NO.</div>
+                        A01
+                    </div>
+                </div>
+
+                <div class="airport">
+                    AIRPORT <span>✈</span> AIRPORT
+                </div>
+
+                <div class="bottom-info">
+                    <div>
+                        <div class="label">GATE</div>
+                        A1
+                    </div>
+                    <div>
+                        <div class="label">BOARDING TIME</div>
+                        12:00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+        <div class="header">
+            BOARDING PASS
+        </div>
+
+        <div class="content">
+            <strong>PASSENGER NAME</strong>
+            PASSENGER SURNAME
+
+            <br><br>
+
+            <strong>FROM: AIRPORT</strong>
+            <strong>TO: AIRPORT</strong>
+
+            <br>
+
+            <div class="bottom-info">
+                <div>
+                    <div class="label">SEAT NO</div>
+                    A01
+                </div>
+                <div>
+                    <div class="label">BOARDING TIME</div>
+                    12:00
+                </div>
+            </div>
+
+            <div class="barcode-horizontal"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
