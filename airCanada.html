@@ -19,7 +19,7 @@ body {
     position: relative;
     width: 950px;
     height: 260px;
-    background: #f4f4f4;
+    background: white;
     border-radius: 20px;
     border: 15px solid #c81e2a;
     display: flex;
@@ -69,24 +69,25 @@ body {
 
 
 .header {
-    position: relative;
+    display: flex;
+    align-items: center;
     font-weight: bold;
     font-size: 22px;
     letter-spacing: 3px;
-    padding-left: 50px;
-    margin-bottom: 10px;
+    margin-bottom:5px;
 }
 
 
-.logo-img {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 36px;
-    height: auto;
-}
+.logo {
+    width: 50px;
+    height: 50px;
 
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwStiHvluT3IzG_t6_StsDUe9aIuBNBRBlSg&s");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
 
 .top-row {
     display: flex;
@@ -115,7 +116,7 @@ body {
 
 .mid {
     display: flex;
-    margin-top: 20px;
+    margin-top: 5px;
     border-top: 1px solid #ccc;
     padding-top: 10px;
 }
@@ -184,17 +185,17 @@ body {
 
 <div class="ticket">
 
-    <!-- CUTS -->
+    
     <div class="cut cut-left"></div>
     <div class="cut cut-right"></div>
 
-    <!-- LEFT -->
+    
     <div class="left">
 
         <div class="left-main">
 
             <div class="header">
-                <img src="maple leaf.svg" class="logo-img">
+                <div class="logo"></div>
                 AIR CANADA
             </div>
 
@@ -253,12 +254,12 @@ body {
 
         </div>
 
-        <!-- BARCODE -->
+        
         <div class="barcode"></div>
 
     </div>
 
-    <!-- RIGHT -->
+    
     <div class="right">
 
         <div class="section">
@@ -286,7 +287,7 @@ body {
         </div>
 
         <div class="center">
-            AC662<br>
+            AC24<br>
         </div>
 
     </div>
