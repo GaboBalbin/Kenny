@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>General Declaration</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    margin-top: 20px;
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+th {
+    text-align: center;
+}
+
+.passenger-box {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.right-align {
+    text-align: right;
+    font-size: 12px;
+}
+
+.crew-list {
+    line-height: 1.5;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="right-align">ICAO Annex 9, Appendix 1</div>
+
+    <h1>GENERAL DECLARATION</h1>
+    <h2>(Outward/Inward)</h2>
+
+    <div class="top-row">
+        <div>
+            <div class="field"><strong>Owner or Operator:</strong> EMIRATES AIRLINES</div>
+            <div class="field"><strong>Marks of Nationality and Registration:</strong> C-GXYZ</div>
+            <div class="field"><strong>Departure from:</strong> Vancouver, Canada</div>
+        </div>
+
+        <div>
+            <div class="field"><strong>Flight No.:</strong> EK81</div>
+            <div class="field"><strong>Date:</strong> 19 January, 2026</div>
+            <div class="field"><strong>Arrival at:</strong> Chek Lap Kok, Hong Kong</div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        FLIGHT ROUTING <br>
+        <small>("Place" Column always to list origin, every en-route stop and destination)</small>
+    </div>
+
+    <table>
+        <tr>
+            <th>PLACE</th>
+            <th>TOTAL NUMBER OF CREW</th>
+            <th>NUMBER OF PASSENGERS ON THIS STAGE</th>
+        </tr>
+
+        <tr>
+            
+            <td>
+                YVL<br><br><br><br><br><br><br><br><br><br><br><br>
+                HKG
+            </td>
+
+            
+            <td class="crew-list">
+                CA - ROZANOV, ILYA GRIGORYEVICH<br>
+                FO - MARLEAU, CLIFF<br>
+                FA - BRADSHAW, CARRIE ELIZABETH<br>
+                FA - BAISHO, HARUKA<br>
+                FA - HOLLANDER, SHANE<br>
+                FA - KAGEYAMA, HIROTO<br>
+                FA - O'CLAIR, TANA MAY<br>
+                FA - SANTIAGO-CLARKE, MARIA ALEJANDRA ROSARIA<br>
+                FA - THOMAS, JOSEPHINE AMELIA<br>
+                FA - TURNER, FRIEDA
+            </td>
+
+            
+            <td class="passenger-box">
+                <strong>Departure Place: YVL</strong><br><br>
+                Embarking: __________<br>
+                Through on same flight: __________<br><br>
+
+                <strong>Arrival Place: HKG</strong><br><br>
+                Disembarking: __________<br>
+                Through on same flight: __________
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
